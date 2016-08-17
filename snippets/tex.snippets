@@ -113,3 +113,18 @@ snippet section
 	${1:Section}~\ref{${2:sec:}}${3}
 snippet page
 	${1:page}~\pageref{${2}}${3}
+#
+
+# Snippets for package specifiction
+snippet ref_preamble
+	\usepackage{natbib}
+	\usepackage[colorlinks,linkcolor=blue, citecolor=black]{hyperref}
+snippet ref_body
+	\bibliographystyle{myabbrvnat}
+	\bibliography{self_perception_lit}
+snippet enumerate
+	\usepackage{enumerate}
+snippet title_page
+	\maketitle
+	\tableofcontents
+	\pagebreak
